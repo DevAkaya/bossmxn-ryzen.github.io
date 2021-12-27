@@ -4,7 +4,9 @@
     --duration: 0.5s;
     position: relative;
     cursor: pointer;
-    top: 3%;
+    top: 20%;
+    bottom: 20%;
+
     left: 30%;
 
     -webkit-tap-highlight-color: transparent;
@@ -20,8 +22,8 @@
     stroke-linecap: round;
     stroke-linejoin: round;
     stroke-width: var(--line-width);
-    width: 68px;
-    height: 75px;
+    width: 48px;
+    height: 55px;
 }
 .volumeButton input + svg path {
     animation: var(--name) var(--duration) ease forwards;

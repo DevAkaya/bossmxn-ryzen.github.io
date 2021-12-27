@@ -195,7 +195,7 @@
 
       let portfolioFilters = select('#portfolio-flters li', true);
 
-      on('click', '#portfolio-flters li', function (e) {
+      function Active(e){
         e.preventDefault();
         portfolioFilters.forEach(function (el) {
           el.classList.remove('filter-active');
@@ -208,7 +208,13 @@
         portfolioIsotope.on('arrangeComplete', function () {
           AOS.refresh()
         });
+      }
+
+      on('click', '#portfolio-flters li', function (e) {
+        Active(e)
       }, true);
+
+
     }
 
   });
